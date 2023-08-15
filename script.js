@@ -12,7 +12,7 @@ function main() {
   // Draw the Path
   ctx.stroke();
 
-  drawCircle(2);
+  drawCircle(70);
 }
 
 function drawCircle(radius) {
@@ -21,10 +21,9 @@ function drawCircle(radius) {
   // Start a new Path
   ctx.beginPath();
 
-  for (var i = 0; i < Math.PI * 60 + 0.1; i += 0.01) {
+  for (var i = 0; i < Math.PI * 2 + 0.1; i += 0.01) {
     var x = 150 + Math.cos(i) * radius;
     var y = 150 + Math.sin(i) * radius;
-    radius *= 1.0007;
     if (i == 0) {
       ctx.moveTo(x, y);
     }
