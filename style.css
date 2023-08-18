@@ -5,9 +5,10 @@ html {
 
 body {
   background: lightblue;
+  margin: 0;
+  overflow: hidden;
 }
 
 canvas {
-  height: 300px;
-  width: 300px;
+
 }
